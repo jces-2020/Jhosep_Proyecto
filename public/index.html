@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | Jhosep Proyecto</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Catálogo de Productos</h1>
+    <nav id="menu-categorias" class="space-x-4 flex items-center">
+      <!-- Categorías se cargan aquí -->
+    </nav>
+    
+    <!-- Contenedor de acciones de usuario -->
+    <div id="user-actions" class="flex items-center space-x-4">
+      <!-- Botones para usuarios autenticados (inicialmente ocultos) -->
+      <a id="btn-registrar-producto" href="productos.html" class="hidden bg-white text-blue-600 px-4 py-2 rounded font-semibold hover:bg-blue-100">Registrar Producto</a>
+      <a id="btn-agregar-categoria" href="agregar-categoria.html" class="hidden bg-green-500 px-4 py-2 rounded font-semibold hover:bg-green-600 text-white">Agregar Categoría</a>
+      <button id="btn-logout" class="hidden bg-red-500 text-white px-4 py-2 rounded font-semibold hover:bg-red-600">Cerrar Sesión</button>
+      <!-- Botones para visitantes (inicialmente visibles) -->
+      <a id="btn-login" href="login.html" class="font-semibold hover:underline">Iniciar Sesión</a>
+      <a id="btn-register" href="register.html" class="bg-green-500 px-4 py-2 rounded font-semibold hover:bg-green-600">Registrarse</a>
+    </div>
+  </header>
+
+  <main class="flex-1 flex flex-col items-center justify-center py-8">
+    <section id="productos-lista" class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+      <!-- Productos se muestran aquí -->
+    </section>
+  </main>
+
+  <footer class="bg-blue-600 text-white text-center p-2 mt-auto">
+    <span>© 2025 Jhosep Proyecto</span>
+  </footer>
+
+  <script src="src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Categoría</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <header class="bg-blue-600 text-white p-4">
+    <h1 class="text-2xl font-bold">Registrar Categoría</h1>
+    <a href="index.html" class="text-white underline">Volver al catálogo</a>
+  </header>
+  <main class="container mx-auto py-8">
+    <form id="form-categoria" class="bg-white rounded shadow p-6 max-w-md mx-auto">
+      <label class="block mb-2 font-semibold" for="nombre">Nombre de la categoría:</label>
+      <input type="text" id="nombre" name="nombre" required class="w-full p-2 border rounded mb-4">
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Registrar</button>
+      <div id="mensaje" class="mt-4"></div>
+    </form>
+  </main>
+  <footer class="bg-blue-600 text-white text-center p-2 mt-8">
+    <span>© 2025 Jhosep Proyecto</span>
+  </footer>
+  <script src="../src/categorias.js"></script>
+</body>
+</html>
