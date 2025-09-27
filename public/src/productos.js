@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://jhosep-proyecto.onrender.com';
 
 // Cargar categorías en el select
 async function cargarCategorias() {

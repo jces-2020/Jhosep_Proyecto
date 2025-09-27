@@ -1,5 +1,5 @@
 // URL base de la API
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://jhosep-proyecto.onrender.com';
 
 // Elementos del DOM
 const menuCategorias = document.getElementById('menu-categorias');
