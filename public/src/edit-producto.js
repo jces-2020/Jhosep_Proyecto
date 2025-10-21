@@ -1,4 +1,6 @@
-const API_URL = 'http://localhost:3000';
+const RENDER_URL = 'https://jhosep-proyecto.onrender.com';
+const isRendered = window.location.hostname.includes('onrender.com') || window.location.hostname === 'jhosep-proyecto.onrender.com';
+const API_URL = isRendered ? RENDER_URL : '';
 
 // Elementos del DOM
 const form = document.getElementById('form-edit-producto');
