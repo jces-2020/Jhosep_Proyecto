@@ -1,4 +1,7 @@
-const API_URL = 'http://localhost:3000/api/auth';
+// Selección del endpoint: usa la URL pública en Render o la ruta relativa en local
+const RENDER_URL = 'https://jhosep-proyecto.onrender.com';
+const isRendered = window.location.hostname.includes('onrender.com') || window.location.hostname === 'jhosep-proyecto.onrender.com';
+const API_URL = isRendered ? `${RENDER_URL}/api/auth` : '/api/auth';
 
 document.getElementById('form-register').addEventListener('submit', async function(e) {
   e.preventDefault();
@@ -45,6 +48,7 @@ document.getElementById('form-register').addEventListener('submit', async functi
       mensajeDiv.className = 'text-red-500';
     }
   } catch (err) {
+    console.error('Error al registrar:', err);
     mensajeDiv.textContent = 'Error de conexión con el servidor.';
     mensajeDiv.className = 'text-red-500';
   }
